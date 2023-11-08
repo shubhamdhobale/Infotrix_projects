@@ -1,0 +1,60 @@
+.quote-display {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(163, 232, 255, 0.501);
+    width: 110%;
+    border-radius: 20px;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 10px 10px 48px 8px rgba(113, 113, 126, 0.84);
+  }
+  
+  .quote-display h2 {
+    font-size: 35px;
+    color: darkblue;
+    text-shadow: 0px 0px 10px darkblue;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .quote-display p{
+    font-size: 28px;
+  margin: 20px 0;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  padding: 15px;
+  font-weight: bold;
+  box-shadow: 10px 10px 48px 8px rgba(152, 152, 169, 0.84);
+  }
+  
+  .quote-display p::before {
+    content: open-quote;
+    font-size: 24px;
+    margin-right: 5px;
+  }
+
+  .quote-display p::after {
+    content: close-quote;
+    font-size: 24px;
+    margin-left: 5px;
+  }
+
+  .current-date {
+    font-size: 16px;
+    color: #5a5a5a;
+    margin-bottom: 10px;
+    margin-left: 80%;
+    
+    border-radius: 10px;
+    font-weight: bold   ;
+  }
+  
+
+  @media (max-width: 768px) {
+    .quote-display p {
+      font-size: 16px;
+    }
+  }
